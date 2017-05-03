@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		p{
+			color: black;
+			font-size: 30px;
+		}
+
+		body{
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		#tagline{
+			text-align: center;
+			margin-top: 25px;
+		}
+
+		ul{
+			display: inline-block;
+			text-align: left;
+		}
+
+		.companytitle{
+			text-decoration: underline;
+			color: tan;
+		}
+
+		.skills{
+			font-weight: bold;
+			float: left;
+			text-align: center;
+			margin-left: 200px;
+			padding-right: 200px;
+		}
+
+		.clients{
+			height: 50px;
+			width: 50px;
+			float: left;
+			text-align: center;
+			margin-left: 100px;
+		}
+
+	></style>
+
+	<title>Neal Kumar Consulting</title>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">NKC</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">Rates</a></li>
+            <li><a href="#contact">Client Login</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>		
+
+
+	<header>
+		<div class = "container">
+			<div class = "jumbotron">
+				<div class = "companytitle"><center><h1>Neal Kumar Consulting LLC</h1></center></div>
+	
+				<div><center><img src="ProfPic.jpg"  height="250" width ="250"></center></div>
+	
+				<div id = "tagline"><h4>Strategic and financial advisory services for <strong>senior business and finance professionals</strong></h4></div>
+			
+				<p>
+					<center><a class="btn btn-lg btn-success" href="#" 
+						role="button">Contact me</a></center> 	
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<p>Neal has worked with <em>Fortune 500 companies </em>across the world. This is what his past clients <a href = "http://www.cognitir.com"> say. </a> </p>
+
+	<div>
+		<ul style="list-style-type:square">
+			<li class = "skills">Problem Solver</li>
+			<li class = "skills">Leader</li>
+			<li class = "skills">Motivator</li>
+		</ul>
+	</div>
+
+	<div>
+		<h4>Services Include:</h4>
+		<ul style="list-style-type:square">
+			<li>Project Management</li>
+			<li>Research</li>
+			<li>HR</li>
+		</ul>
+	</div>
+
+	<h4>Past Clients:</h4>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+			<img src="https://cdn3.geready.com/digital/sites/default/files/1024px-General_Electric_logo.svg_.png" class = "clients">
+			<img src="http://logok.org/wp-content/uploads/2014/04/Apple-Logo-black.png" class = "clients">
+        </div>
+        <div class="item">
+			logo 4, logo 5, logo 6
+        </div>
+    </div>
+	</div>
+
+	<br>
+
+	<br>
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			 	<div class = "thumbnail"> 
+			 		<img src="Work1.jpg">
+				</div>
+			</div>
+			<div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			 	<div class = "thumbnail"> 
+			 		<img src="Work2.jpg">
+				</div>
+			</div>
+			<div class = "col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			 	<div class = "thumbnail"> 
+			 		<img src="Work3.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+	$(document).ready(function() {
+		$("#myCarousel").carousel({interval: 4000});
+	});
+
+	</script>
+
+
+
+
+</body>
+</html>
